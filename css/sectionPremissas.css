@@ -1,0 +1,104 @@
+#premissas {
+    background: var(--white);
+    position: relative;
+    overflow: hidden;
+}
+
+#premissas header {
+    text-align: left;
+}
+
+#premissas .content span.span {
+    font-size: 1.6rem;
+    color: var(--red);
+    font-weight: 400;
+}
+
+#premissas h2 {
+    margin-top: .5rem;
+    font-size: 2.8rem;
+    color: var(--gray);
+    font-weight: 500;
+
+    margin-bottom: 4rem;
+}
+
+#premissas .cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 5rem;
+}
+
+#premissas .cards .card {
+    background-color: #e4e4e4;
+    padding: 4rem;
+    border-radius: 1rem;
+
+    box-shadow:  12px 12px 24px #cdcdcdc8,
+             -12px -12px 24px #ffffffc0;
+
+    width: 100%;
+}
+
+#premissas .cards img {
+    width: 7rem;
+}
+
+#premissas .cards h3 {
+    font-size: 2rem;
+    color: var(--gray);
+    font-weight: 600;
+}
+
+@media (min-width: 1080px) {    
+    section#premissas {
+        padding-top: 10rem;
+    }
+
+    section#premissas header {
+        text-align: center;
+        margin-bottom: 7rem;
+    }
+    
+    section#premissas .content span.span {
+        font-size: 1.6rem;
+        color: var(--red);
+        font-weight: 400;
+    }
+    
+    section#premissas h2 {
+        margin-top: .5rem;
+        font-size: 3.5rem;
+        color: var(--gray);
+        font-weight: 500;
+    
+        margin-bottom: 7rem;
+    }
+
+    section#premissas .content .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 5rem;
+    }
+
+    section#premissas .content .cards .card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        padding: 5rem;
+    }
+
+    section#premissas .content .cards .card img {
+        width: 10rem;
+        margin-bottom: 2rem;
+    }
+
+    section#premissas .content .cards .card h3 {
+        font-size: 2.5rem;
+    }
+}

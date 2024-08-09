@@ -1,0 +1,130 @@
+.topic {
+    background: var(--white);
+    position: relative;
+
+    padding-block: 0;
+    padding-bottom: 8rem;
+
+    overflow: hidden;
+}
+
+.topic .image img {
+    width: 100%;
+}
+
+.topic .topics {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+
+    margin-top: 3rem;
+}
+
+.topic .topics .box img {
+    width: 5rem;
+
+    display: none;
+}
+
+.topic .topics .box h3 span {
+    font-size: 3rem;
+}
+
+.topic .topics .box h3 {
+    font-size: 5rem;
+
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.topic .topics .box p {
+    color: #1d1d1d;
+    font-weight: 500;
+    margin-top: -1rem;
+}
+
+@media (min-width: 1080px) {    
+    section.topic {
+        padding-block: 0;
+        max-height: 100vh;
+        overflow: hidden;
+        padding-top: 8rem;
+    }
+
+    section#service-dois .content,
+    section#service-quatro .content {
+        grid-template-areas: "a b";
+    }
+
+    section#service-dois .image,
+    section#service-quatro .image {
+        grid-area: a;
+    }
+
+    section.topic .content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    section.topic .wrapper {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: start;
+        margin-top: 8rem;
+    }
+
+    section.topic .text {
+        width: 70%;
+    }
+
+    section.topic .image img {
+        height: 100%;
+        object-fit: cover;
+
+        mask-image: linear-gradient(to right, #000000 95%, transparent);
+    }
+
+    section.topic .topics {
+        margin-top: 0;
+    }
+
+    section.topic .topics .box img {
+        width: 5rem;
+        display: none;
+    }
+    
+    section.topic .topics .box h3 span {
+        font-size: 4rem;
+    }
+    
+    section.topic .topics .box h3 {
+        font-size: 8rem;
+    
+        background: var(--gradient);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    section.topic .topics .box p {
+        color: #1d1d1d;
+        font-weight: 500;
+        font-size: 1.8rem;
+        margin-top: -2rem;
+    }
+}
+
+@media (min-width: 1700px) {
+    section.topic .wrapper {
+        margin-top: 16rem;
+    }
+}
+
+@media (min-width: 1700px) {
+    section.topic .wrapper {
+        margin-top: 18rem;
+    }
+}

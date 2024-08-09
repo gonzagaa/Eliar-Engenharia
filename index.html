@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliar Engenharia</title>
+
+    <link rel="stylesheet" href="./css/index.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="shortcut icon" href="./assets/tracosDamatta.webp" type="image/x-icon">
+</head>
+<body>
+
+    <nav id="navigation" class="">
+
+        <div class="wrapper">
+
+            <a class="logo" href="#home">
+                <img src="./assets/logo eliar.png" alt="">
+            </a>
+            
+            <div class="menu">
+                <ul>
+                    <li><a onclick="closeMenu()" href="#home">Home</a></li>
+                    <li><a onclick="closeMenu()" href="#sobre">Sobre nós</a></li>
+                    <li><a onclick="closeMenu()" href="#services">Serviços</a></li>
+                    <li><a onclick="closeMenu()" href="#suporte">Contato</a></li>
+                    
+                </ul>
+
+                <a href="#home"><img class="logo" onclick="closeMenu()" src="./assets/logo DAMATTA escrita.svg" alt=""></a>
+             </div>
+
+            <button 
+            aria-expanded="false"
+            aria-label="Abrir menu"
+            onclick="openMenu()" 
+            class="open-menu">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 20H30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M10 12H30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M18 28L30 28" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg> 
+            </button>
+            <button
+            aria-expanded="true"
+            aria-label="Fechar menu"
+            onclick="closeMenu()" 
+            class="close-menu">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M30 10L10 30M10 10L30 30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                        
+            </button>
+
+        </div>
+           
+    </nav>
+
+    <header id="home">
+        <!-- <div class="video">
+            <video autoplay muted loop>
+                <source src="./assets/456055_Bangkok_Thailand_1280x720.mp4" type="video/mp4">
+            </video>
+        </div> -->
+        
+        <div class="wrapper">
+            <div class="content">
+                <div class="text" class="text-2">
+                    <div class="text-content">
+                        <img data-aos="fade-up-left" class="logo" src="./assets/logo eliar.png" alt="">
+                        <h1>Instalações industriais de grande porte em todo o Brasil.</h1>
+                        <div data-aos="fade-up-left" class="buttons">
+                            <a href="#services"><button>Nossos serviços</button></a>
+                            <a href="#suporte"><button>Saiba mais</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="interactive-image" class="image">
+                    <img class="desktop" src="./assets/bg eliar.png" alt="">
+                    <img class="mobile" src="./assets/bg eliar mobile.png" alt="">
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <section id="sobre">
+        <div class="wrapper">
+            <div class="content">
+                <header data-aos="fade-up">
+                    <span class="span">Sobre</span>
+                    <h2>Quem somos?</h2>
+                </header>
+
+                <div data-aos="fade-up-right" class="container">
+                    <div class="text">
+                        <h3>Eliar Engenharia</h3>
+                        <p>A <span>Eliar</span> é uma <span>empresa especializada em instalações industriais para empreendimentos de grande porte</span>, atuando em todo o território nacional desde 2011. Com mais de <span>uma década de experiência no mercado</span>, acumulamos um vasto portfólio de projetos bem-sucedidos, sempre primando pela excelência e inovação. Nosso compromisso é entregar <span>soluções completas e eficientes</span> em sistemas de ar condicionado, instalações elétricas e hidráulicas, além de sistemas de combate a incêndios. Ao longo de nossa trajetória, <span>realizamos mais de 300 obras</span>, destacando-nos como uma referência no setor de <span>instalações industriais</span>.</p>
+                        <div class="button">
+                            <a href="#services"><button>Nossos serviços</button></a>
+                        </div>
+                    </div>
+
+                    <div data-aos="fade-up-left" class="image">
+                        <img src="./assets/imagem sobre eliar.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="obras">
+        <div class="wrapper">
+            <div class="content">
+                <header data-aos="fade-up">
+                    <span class="span">Obras</span>
+                    <h2>Confira algumas de nossas obras</h2>
+                </header>
+
+                <div class="images">
+                    <div class="image"><img src="./assets/eliar obra 1.png" alt=""></div>
+
+                    <div class="image"><img src="./assets/eliar obra 2.png" alt=""></div>
+
+                    <div class="image"><img src="./assets/eliar obra 3.png" alt=""></div>
+
+                    <div class="image"><img src="./assets/eliar obra 4.png" alt=""></div>
+
+                    <div class="image"><img src="./assets/eliar obra 5.png" alt=""></div>
+
+                    <div class="image"><img src="./assets/eliar obra 6.png" alt=""></div>
+
+                    <div class="image"><img src="./assets/eliar obra 7.png" alt=""></div>
+
+                    <div class="image"><img src="./assets/eliar obra 8.png" alt=""></div>
+
+                    <div class="image"><img src="./assets/eliar obra 9.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="wrapper">
+            <div class="content">
+                <header data-aos="fade-up">
+                    <span class="span">Serviços</span>
+                    <h2>Confira nossos serviços</h2>
+                </header>
+
+                <div class="cards">
+                    <div class="card">
+                        <img src="./assets/ar.png" alt="">
+                        <h3>Sistema de ar condicionado</h3>
+                        <p>Soluções avançadas para climatização eficiente e confortável em ambientes industriais.</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="./assets/eletrico.png" alt="">
+                        <h3>Instalações Elétricas</h3>
+                        <p>Projetos elétricos seguros e sustentáveis para empreendimentos de grande porte.</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="./assets/hidraulica.png" alt="">
+                        <h3>Instalações Hidráulicas</h3>
+                        <p>Implementação de sistemas hidráulicos robustos e eficientes, adaptados às necessidades do seu projeto.</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="./assets/incendio.png" alt="">
+                        <h3>Sistema de combate a incêndios</h3>
+                        <p>Tecnologia de ponta para prevenção e combate a incêndios, garantindo a segurança das instalações.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="service-dois" class="topic">
+        <div class="content">
+                <div data-aos="fade-left" class="image">
+                    <img src="./assets/mapa eliar.png" alt="">
+                </div>
+
+                <div class="wrapper">
+                    <div class="text">
+                        <div data-aos="fade-up-right" class="topics">
+                            <div class="box">
+                                <img src="./assets/obras.png" alt="">
+                                <h3><span>+</span>300</h3>
+                                <p>obras realizadas</p>
+                            </div>
+
+                            <div class="box">
+                                <img src="./assets/estrela.png" alt="">
+                                <h3><span>+</span>20</h3>
+                                <p>estados atendidos</p>
+                            </div>
+
+                            <div class="box">
+                                <img src="./assets/check.png" alt="">
+                                <h3><span>+</span>1 milhão</h3>
+                                <p>de BTUS</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <section id="clientes">
+        <div class="wrapper">
+            <div class="content">
+                <header data-aos="fade-up">
+                    <span class="span">Clientes</span>
+                    <h2>Confira nossos clientes</h2>
+                </header>
+
+                <div class="cards">
+                    <div class="card">
+                        <img src="./assets/atacadao.png" alt="">
+                    </div>
+
+                    <div class="card">
+                        <img src="./assets/assai.png" alt="">
+                    </div>
+
+                    <div class="card">
+                        <img src="./assets/newera.png" alt="">
+                    </div>
+
+                    <div class="card">
+                        <img src="./assets/flex.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="premissas">
+        <div class="wrapper">
+            <div class="content">
+                <header data-aos="fade-up">
+                    <span class="span">Premissas</span>
+                    <h2>Premissas importantes da nossa empresa</h2>
+                </header>
+
+                <div class="cards">
+                    <div class="card">
+                        <img src="./assets/check.png" alt="">
+                        <h3>QUALIDADE</h3>
+                    </div>
+
+                    <div class="card">
+                        <img src="./assets/estrela.png" alt="">
+                        <h3>COMPROMETIMENTO</h3>
+                    </div>
+
+                    <div class="card">
+                        <img src="./assets/pontualidade.png" alt="">
+                        <h3>PONTUALIDADE</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="localizacao">
+           <div class="content">
+                <div class="wrapper">
+                    <header>
+                        <span class="span">Contato</span>
+                        <h2>Para qualquer dúvida, entre em contato conosco!</h2>
+                        <div class="button">
+                            <a href="#"><button>Entrar em contato</button></a>
+                        </div>
+                    </header>
+                </div>
+                <div data-aos="fade-up" class="mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5401.926955324937!2d-49.25863198170161!3d-16.789646958105685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935efbb2d77565dd%3A0xd391351427ed0612!2sEliar%20Engenharia%20Ltda!5e0!3m2!1spt-BR!2sbr!4v1723043611221!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+           </div>
+    </section>
+
+    <footer id="footer">
+        <div class="wrapper">
+            <div class="content">
+                <img class="logo" src="./assets/logo eliar.png" alt="">
+
+                <div class="navigation">
+                    <h3>Navegação</h3>
+                    <p><a href="#home">Home</a></p>
+                    <p><a href="#sobre">Sobre</a></p>
+                    <p><a href="#services">Serviços</a></p>
+                    <p><a href="#suporte">Contato</a></p>
+                </div>
+    
+                <div class="contato">
+                    <h3>Conecte-se conosco</h3>
+                    <p>R. Um, quadra 01 - lote 06 - <br> Polo Empresarial de Goiás, Aparecida de Goiânia - GO, 74985-115</p>
+                    <p>contato@eliarengenharia.com.br</p>
+                    <p><a target="_blank" href="tel:+55-64-93442-2520">(62) 9999-9999</a></p>
+                </div>
+    
+                <div class="redes-sociais">
+                    <h3>Social</h3>
+                    <div class="icons">
+                        <a target="_blank" href=""><ion-icon name="logo-whatsapp"></ion-icon></a>
+                        <a target="_blank" href="https://www.instagram.com/lsbdigital/"><ion-icon name="logo-instagram"></ion-icon></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <section id="author">
+        <div class="wrapper">
+            <div class="content">
+                <p>© Todos os direitos reservados - Eliar Engenharia</p>
+
+                <a target="_blank" href="https://instagram.com/gonzxgx">
+                    <p class="author">
+                        Desenvolvido por
+                        <img src="./assets/GustavoGonzaga Logo Small.svg" alt="">
+                        Gustavo Gonzaga
+                    </p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init(
+            {
+                duration: 1500,
+            }
+        );
+      </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html> 
